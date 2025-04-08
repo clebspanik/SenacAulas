@@ -1,0 +1,87 @@
+programa {
+
+  funcao inicio() {
+
+    inteiro vetor[5] = {1,3,5,7,9} //Cria o vetor
+
+    inteiro numero //numero que o operador digita
+
+    logico achou = falso //operador lógico
+
+
+
+    escreva("Qual o número que você procura?")
+
+    leia(numero) //armazenar o número
+
+   
+
+    //Percorre o vetor em busca do número
+
+    para (inteiro posicao = 0;posicao < 5;posicao++){
+
+      se (vetor[posicao]==numero){
+
+        achou = verdadeiro
+
+        escreva("Você está com sorte, seu número está na posição:\t\t",posicao+1)
+
+      }
+
+    }
+
+    //Quando não achar informar
+
+    se (nao achou){
+
+      escreva("Seu número não está na lista")
+
+    }
+
+   
+
+  }
+
+}
+
+
+
+
+/*
+
+
+
+
+
+
+
+programa {
+  funcao inicio() 
+  
+  {
+    inteiro vetor [5] = {1, 3, 5, 7, 9}
+    inteiro numero, i
+    logico encontrado
+    encontrado = falso
+
+    escreva ("Digite um número para procurar no vetor: ")
+    leia (numero)//Armazena o número
+
+    para (i = 0; i < 5; i++){
+      se (vetor [i] == numero){
+        encontrado = verdadeiro
+        escreva ("Número encontrado na posição ", i)
+      }
+    }
+
+    se (nao encontrado) {
+      escreva("Número não encontrado no vetor.")
+    }
+
+  }
+}
+
+
+
+
+*/
