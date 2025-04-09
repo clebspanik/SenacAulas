@@ -1,0 +1,40 @@
+/*Programa que soma as matrizes */
+
+
+programa {
+  funcao inicio() {
+    inteiro ordemMatriz,linha,coluna
+    inteiro matriz1[10][10], matriz2[10][10],resultado[10][10]
+    escreva("Digite a ordem da Matriz: \n")
+    leia(ordemMatriz)
+    //leia primeira matriz
+    escreva("Escreva os elementos da matriz 1:\n")
+    para (linha=0;linha < ordemMatriz;linha++){
+      para(coluna=0;coluna < ordemMatriz;coluna++){
+        escreva("Elemento [",linha,",",coluna,"]: ")
+        leia(matriz1[linha][coluna])
+      }
+    }
+    //leia segunda matriz
+    escreva("Escreva os elementos da matriz 2:\n")
+    para (linha=0;linha < ordemMatriz;linha++){
+      para(coluna=0;coluna < ordemMatriz;coluna++){
+        escreva("Elemento [",linha,",",coluna,"]: ")
+        leia(matriz2[linha][coluna])
+      }
+    }
+    //somar as matriz    
+    para (linha=0;linha < ordemMatriz;linha++){
+      para(coluna=0;coluna < ordemMatriz;coluna++){
+        resultado[linha][coluna] = matriz1[linha][coluna] + matriz2[linha][coluna]        
+      }
+    }
+    //imprimir resultado
+    escreva("O resultado da soma das matrizes é:\n")
+    para (linha=0;linha < ordemMatriz;linha++){
+      para(coluna=0;coluna < ordemMatriz;coluna++){
+        escreva(resultado[linha][coluna],"\t\t")
+      }
+    }
+  }
+}
